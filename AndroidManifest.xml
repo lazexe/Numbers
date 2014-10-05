@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lazexe.Numbers"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+        <activity android:name="NumbersActivity"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultActivity"/>
+        <receiver android:name=".ApplicationWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_ONE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_TWO" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_THREE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_FOUR" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_FIVE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_SIX" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_SEVEN" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_EIGHT" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_NINE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_ZERO" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_SAVE" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_VIEW" />
+                <action android:name="com.lazexe.Numbers.ApplicationWidgetProvider.ACTION_CLEAR" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/application_widget_provider" />
+        </receiver>
+    </application>
+</manifest>

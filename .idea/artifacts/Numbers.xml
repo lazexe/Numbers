@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="Numbers">
+    <output-path>$PROJECT_DIR$/out/artifacts/Numbers</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+      </options>
+    </properties>
+    <root id="archive" name="Numbers.apk">
+      <element id="android-final-package" facet="Numbers/android/Android" />
+    </root>
+  </artifact>
+</component>

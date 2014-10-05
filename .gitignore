@@ -1,0 +1,11 @@
+.idea/
+bin/
+gen/
+out/
+ant.properties
+build.xml
+layout-2014-09-05-195205.png
+local.properties
+Numbers.iml
+numpad-specular.png
+proguard-project.txt
